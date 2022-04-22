@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-size: 1.6rem;
+    scroll-behavior: smooth;
   }
 
   h1,h2,h3,h4,h5,h6 {

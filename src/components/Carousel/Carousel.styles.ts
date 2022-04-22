@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const CarouselWrapper = styled.article`
   margin-top: 160px;
 

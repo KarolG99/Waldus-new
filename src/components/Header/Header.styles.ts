@@ -37,6 +37,15 @@ export const HeaderQuote = styled.h1`
   max-width: 320px;
   margin-left: calc(100% - 320px);
   font-weight: 600;
+  position: relative;
+  z-index: 10;
+  line-height: 150%;
+  /* background-color: ${({ theme }) => theme.color.primary}; */
+  padding: 5px;
+
+  span {
+    background-color: rgba(252, 135, 0, 0.7);
+  }
 
   ${({ theme }) => theme.mq.small} {
     margin: 100px 10px 100px 10px;

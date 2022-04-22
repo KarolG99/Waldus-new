@@ -6,14 +6,13 @@ export const Article = styled.article`
   align-items: center;
   margin: auto;
   justify-content: center;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.gray};
   padding-bottom: 60px;
   width: 100%;
 `;
 
 export const ServicesHeader = styled.h1`
   max-width: 100vw;
-  background-color: ${({ theme }) => theme.color.white};
   margin: 70px 30vw 50px 30vw;
   padding: 0.2rem 0.6rem 0.2rem 0.6rem;
   border-radius: 15px 15px 15px 15px;

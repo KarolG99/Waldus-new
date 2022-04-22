@@ -20,6 +20,7 @@ export const Section = styled.section`
     & h2 {
       font-family: ${({ theme }) => theme.font.family.montserrat};
       color: ${({ theme }) => theme.color.black};
+      font-weight: 600;
     }
     & p {
       margin: 15px 0px;

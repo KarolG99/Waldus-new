@@ -11,7 +11,7 @@ export const OuterWrapper = styled.div`
   width: 100%;
   padding: 20px;
   font-family: ${({ theme }) => theme.font.family.montserrat};
-  z-index: 10;
+  z-index: 100;
   position: relative;
   max-width: 1600px;
   margin: auto;
