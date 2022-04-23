@@ -9,8 +9,22 @@ export const AboutWrapper = styled.article`
   align-items: center;
   position: relative;
 
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    background-color: ${({ theme }) => theme.color.light};
+    top: 50px;
+    z-index: -1;
+  }
+
   ${({ theme }) => theme.mq.desktop} {
     display: block;
+
+    &::after {
+      height: 130%;
+    }
   }
 `;
 
