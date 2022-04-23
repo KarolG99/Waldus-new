@@ -13,7 +13,8 @@ export const Scale = keyframes`
 `;
 
 export const ProjectsWrapper = styled.div`
-  margin-top: 250px;
+  margin-top: 300px;
+  position: relative;
 
   ${({ theme }) => theme.mq.desktop} {
     margin-top: 400px;
@@ -30,7 +31,7 @@ export const ProjectsWrapper = styled.div`
       bottom: 2px;
       left: 0%;
       content: "";
-      width: 90%;
+      width: 35%;
       height: 15px;
       background-color: ${({ theme }) => theme.color.primary};
       z-index: -1;
@@ -61,12 +62,12 @@ export const CarouselImage = styled.img`
 `;
 
 export const AfterElement = styled.div`
+  width: 80%;
+  height: 60%;
   position: absolute;
+  top: 12%;
+  right: 0;
   background-color: ${({ theme }) => theme.color.primary};
-  /* background-color: #DFE0DF; */
-  width: 100%;
-  height: 50%;
-  top: 50%;
   z-index: -1;
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as Ellipse } from "../../assets/icons/ellipseGroup.svg";
 
 export const AboutWrapper = styled.article`
-  margin-top: 150px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,6 +17,10 @@ export const AboutWrapper = styled.article`
     background-color: ${({ theme }) => theme.color.light};
     top: 50px;
     z-index: -1;
+  }
+
+  ${({ theme }) => theme.mq.tablet} {
+    margin-top: 300px;
   }
 
   ${({ theme }) => theme.mq.desktop} {

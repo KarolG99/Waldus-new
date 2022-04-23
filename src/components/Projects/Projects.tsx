@@ -47,8 +47,9 @@ const Projects = () => {
           alt="projekty"
         />
         <ArrowIcon onClick={() => toggleImage("next")} />
-        <AfterElement></AfterElement>
       </CarouselWrapper>
+
+      <AfterElement />
     </ProjectsWrapper>
   );
 };
