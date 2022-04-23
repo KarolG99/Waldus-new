@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 
-const Scale = keyframes`
+export const Scale = keyframes`
   0% {
     transform: scale(0.75);
     opacity: 0.5;
@@ -62,7 +62,8 @@ export const CarouselImage = styled.img`
 
 export const AfterElement = styled.div`
   position: absolute;
-  background-color: ${({ theme }) => theme.color.secondary};
+  background-color: ${({ theme }) => theme.color.primary};
+  /* background-color: #DFE0DF; */
   width: 100%;
   height: 50%;
   top: 50%;

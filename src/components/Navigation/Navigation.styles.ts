@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Scale } from "../Projects/Projects.styles";
 
 interface Props {
   isOpen?: boolean;
@@ -56,6 +57,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+
+  &.animation {
+    animation: ${Scale} 0.27s ease-in-out;
+  }
 
   ${({ theme }) => theme.mq.desktop} {
     position: static;
