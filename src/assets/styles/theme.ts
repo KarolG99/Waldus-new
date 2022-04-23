@@ -9,7 +9,7 @@ export const theme = {
   },
   font: {
     size: {
-      heading: "3.2rem",
+      heading: "3.6rem",
       headingMobile: "5.3rem",
       headingSmall: "4.2rem",
       paragraph: "1.6rem",

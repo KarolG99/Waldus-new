@@ -1,15 +1,27 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
   margin: 0 30px 150px 20px;
   padding-top: 60px;
+  position: relative;
+
+    &::after {
+      content: "";
+      width: 270px;
+      height: 120%;
+      background-color: #FFEACF;
+      position: absolute;
+      top: -70px;
+      right: 20px;
+    }
 `;
 
 export const HeaderImageWrapper = styled.div`
   position: relative;
-  width: 90%;
+  width: 100%;
   height: fit-content;
   max-width: 600px;
+  z-index: 9;
   ::after {
     position: absolute;
     width: 120px;
@@ -40,7 +52,6 @@ export const HeaderQuote = styled.h1`
   position: relative;
   z-index: 10;
   line-height: 150%;
-  /* background-color: ${({ theme }) => theme.color.primary}; */
   padding: 5px;
 
   span {
