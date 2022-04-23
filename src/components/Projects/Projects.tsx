@@ -21,15 +21,15 @@ const Projects = () => {
   const toggleImage = (action: string) => {
     switch (action) {
       case "next":
-        setAnimationActive(true);
         setCurrentImg((prev) => prev + 1);
         if (currentImg >= Images.length - 1) setCurrentImg(0);
+        setAnimationActive(true);
         break;
 
       case "prev":
-        setAnimationActive(true);
         setCurrentImg((prev) => prev - 1);
         if (currentImg <= 0) setCurrentImg(Images.length - 1);
+        setAnimationActive(true);
         break;
     }
   };
