@@ -6,6 +6,7 @@ export const theme = {
     white: "#FFFFFF",
     dark: "#252525",
     gray: "#F9F9F9",
+    light: "#FFEACF",
   },
   font: {
     size: {

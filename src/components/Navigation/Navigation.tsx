@@ -21,7 +21,7 @@ const Navigation = () => {
         <StyledNavigation>
           <ul>
             <li>
-              <a href="#home" onClick={toggleNavigation}>Strona Główna</a>
+              <a id="home" href="#home" onClick={toggleNavigation}>Strona Główna</a>
             </li>
             <li>
               <a href="#services" onClick={toggleNavigation}>Usługi</a>

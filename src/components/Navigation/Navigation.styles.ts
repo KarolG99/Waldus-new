@@ -101,10 +101,26 @@ export const StyledNavigation = styled.nav`
       display: flex;
       height: auto;
       li {
+        margin: 0 30px;
         a {
           font-size: ${({ theme }) => theme.font.size.smallMenu};
+          &#home {
+            border-bottom: 1px solid ${({ theme }) => theme.color.primary};
+          }
         }
       }
+    }
+  }
+
+  ${({ theme }) => theme.mq.bigDesktop} {
+    ul > li {
+      margin: 0 40px;
+    }
+  }
+
+  ${({ theme }) => theme.mq.huge} {
+    ul > li {
+      margin: 0 55px;
     }
   }
 `;

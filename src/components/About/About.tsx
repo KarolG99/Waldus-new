@@ -25,6 +25,7 @@ const About = () => {
       <AboutImgWrapper>
         <AboutImage src={aboutImg} />
         <EllipseIcon />
+        <EllipseIcon className="second" />
       </AboutImgWrapper>
     </AboutWrapper>
   );

@@ -9,7 +9,7 @@ export const Wrapper = styled.header`
       content: "";
       width: 270px;
       height: 120%;
-      background-color: #FFEACF;
+      background-color: ${({ theme }) => theme.color.light};
       position: absolute;
       top: -70px;
       right: 20px;

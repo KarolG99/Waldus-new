@@ -58,15 +58,30 @@ export const AboutImgWrapper = styled.div`
 
 export const EllipseIcon = styled(Ellipse)`
   width: 20%;
-  max-width: 100px;
   position: absolute;
   bottom: -80px;
   left: 3%;
+
+  ${({ theme }) => theme.mq.tablet} {
+    width: 105px;
+  }
 
   ${({ theme }) => theme.mq.desktop} {
     position: absolute;
     left: 90%;
     top: -200px;
+  }
+
+  &.second {
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: -520px;
+    width: 70px;
+
+    ${({ theme }) => theme.mq.bigDesktop} {
+      display: block;
+    }
   }
 `;
 
