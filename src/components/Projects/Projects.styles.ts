@@ -4,7 +4,7 @@ import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 const Scale = keyframes`
   0% {
     transform: scale(0.75);
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

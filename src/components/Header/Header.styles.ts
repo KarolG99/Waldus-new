@@ -11,7 +11,7 @@ export const Wrapper = styled.header`
       height: 120%;
       background-color: ${({ theme }) => theme.color.light};
       position: absolute;
-      top: -70px;
+      top: -80px;
       right: 20px;
     }
 `;
@@ -24,13 +24,18 @@ export const HeaderImageWrapper = styled.div`
   z-index: 9;
   ::after {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 60%;
+    height: 60%;
     content: "";
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 90%, 90% 90%, 90% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 95%, 96% 95%, 96% 0);
     background-color: ${({ theme }) => theme.color.primary};
     bottom: -13px;
-    right: -15px;
+    right: -17px;
+
+    ${({ theme }) => theme.mq.tablet} {
+      bottom: -17px;
+    right: -22px;
+    }
   }
 
   ${({ theme }) => theme.mq.bigDesktop} {

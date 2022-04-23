@@ -6,10 +6,13 @@ import {
   CarouselWrapper,
   ProjectsWrapper,
 } from "./Projects.styles";
-import img1 from "../../assets/images/headerImg.jpg";
-import img2 from "../../assets/images/aboutImg.jpg";
+import img0 from "../../assets/images/sliderImages/img0.png";
+import img1 from "../../assets/images/sliderImages/img1.png";
+import img2 from "../../assets/images/sliderImages/img2.png";
+import img3 from "../../assets/images/sliderImages/img3.png";
+import img4 from "../../assets/images/sliderImages/img4.png";
 
-const Images = [img1, img2];
+const Images = [img0, img1, img2, img3, img4];
 
 const Projects = () => {
   const [currentImg, setCurrentImg] = useState(0);
