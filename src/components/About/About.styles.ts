@@ -61,6 +61,7 @@ export const AboutImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   z-index: 1;
+  object-fit: contain;
 
   ${({ theme }) => theme.mq.desktop} {
     position: absolute;

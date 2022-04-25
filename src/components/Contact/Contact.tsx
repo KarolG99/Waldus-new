@@ -15,17 +15,17 @@ const Contact = () => {
       <ContactDetail>
         <p>
           Telefon:{" "}
-          <a href="tel:123456789">
+          <a href="tel:888901395">
             {" "}
-            (+48)<strong> 123 456 789</strong>
+            (+48)<strong> 888 901 395</strong>
           </a>
         </p>
-        <p>Jastrzębia (adres)</p>
+        <p>Jastrzębia</p>
         <p>33-191</p>
         <p>woj. małopolskie</p>
         <p>Pn. - Pt. 7:00 - 18:00</p>
         <p>
-          e-mail: <a href="mailto:adres@adres.pl">adres@adres.pl</a>
+          e-mail: <a href="mailto:waldemarbiskup@interia.pl">waldemarbiskup@interia.pl</a>
         </p>
       </ContactDetail>
       <FooterLine />

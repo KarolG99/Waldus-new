@@ -53,7 +53,7 @@ export const CarouselImage = styled.img`
   max-width: 500px;
 
   &.with-animation {
-    animation: ${Scale} 0.37s ease-in-out;
+    /* animation: ${Scale} 0.37s ease-in-out; */
   }
 
   ${({ theme }) => theme.mq.tablet} {

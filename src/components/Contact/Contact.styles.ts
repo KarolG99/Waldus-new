@@ -8,7 +8,7 @@ export const ContactWrapper = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 50px 20px 10px 20px;
 
   ${({ theme }) => theme.mq.tablet} {
       margin-top: 200px;

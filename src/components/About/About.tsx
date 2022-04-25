@@ -14,11 +14,12 @@ const About = () => {
       <AboutTextWrapper>
         <h1>Walduś</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but
+          Jesteśmy niedużą ale solidną firmą ogólnobudowlaną z Jastrzębi koło
+          Tarnowa. Mamy 20 lat doświadczenia w branży, które zdobywaliśmy w
+          firmach zagranicznych i polskich. Cały czas idziemy z duchem czasu a
+          nowości w branży nie są nam obce. Możesz liczyć na nasze doradztwo na
+          każdym etapie pracy. Skontaktuj się z nami, a możesz być pewny, że
+          sprostamy Twoim oczekiwaniom.
         </p>
       </AboutTextWrapper>
 
