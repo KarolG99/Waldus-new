@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import { StyledMain } from "./components/Main.styles";
 import Services from "./components/Services/Services";
 import MainTemplate from "./templates/MainTemplate";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Services />
         <About />
         <Projects />
+        <Contact />
       </StyledMain>
     </MainTemplate>
   );

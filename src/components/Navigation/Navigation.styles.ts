@@ -83,6 +83,15 @@ export const Logo = styled.span`
   }
 `;
 
+export const Line = styled.div`
+  position: absolute;
+  left: 40%;
+  height: 2px;
+  width: 20%;
+  background-color: ${({ theme }) => theme.color.primary};
+  transition: transform 0.4s ease;
+`;
+
 export const StyledNavigation = styled.nav`
   ul {
     list-style: none;
@@ -108,9 +117,11 @@ export const StyledNavigation = styled.nav`
       li {
         margin: 0 30px;
         a {
+          position: relative;
           font-size: ${({ theme }) => theme.font.size.smallMenu};
-          &#home {
-            border-bottom: 1px solid ${({ theme }) => theme.color.primary};
+
+          &:hover ${Line} {
+            transform: scaleX(5);
           }
         }
       }

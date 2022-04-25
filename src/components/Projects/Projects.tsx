@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <ProjectsWrapper>
-      <h1>Nasze Projekty</h1>
+      <h1>Nasze realizacje</h1>
 
       <CarouselWrapper>
         <ArrowIcon className="prev" onClick={() => toggleImage("prev")} />

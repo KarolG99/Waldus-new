@@ -9,7 +9,7 @@ import headerImg from "../../assets/images/headerImg.jpg";
 
 const Header = () => {
   return (
-    <Wrapper id="#home">
+    <Wrapper>
       <HeaderImageWrapper>
         <HeaderImage src={headerImg} alt="pomieszczenie" />
       </HeaderImageWrapper>

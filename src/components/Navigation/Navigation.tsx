@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Line,
   Logo,
   OuterWrapper,
   StyledBurger,
@@ -29,22 +30,25 @@ const Navigation = () => {
         onAnimationEnd={() => setOpenAnimation(false)}
         className={openAnimation ? "animation" : ""}
       >
-        <Logo>Walduś</Logo>
+        <Logo id="home">Walduś</Logo>
         <StyledNavigation>
           <ul>
             <li>
-              <a id="home" href="#home" onClick={toggleNavigation}>
+              <a href="#home" onClick={toggleNavigation}>
                 Strona Główna
+                <Line />
               </a>
             </li>
             <li>
               <a href="#services" onClick={toggleNavigation}>
                 Usługi
+                <Line />
               </a>
             </li>
             <li>
               <a href="/" onClick={toggleNavigation}>
                 Kontakt
+                <Line />
               </a>
             </li>
           </ul>
