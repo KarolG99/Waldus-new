@@ -35,7 +35,7 @@ const Projects = () => {
   };
 
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id="projects">
       <h1>Nasze realizacje</h1>
 
       <CarouselWrapper>

@@ -84,12 +84,14 @@ export const Logo = styled.span`
 `;
 
 export const Line = styled.div`
-  position: absolute;
-  left: 40%;
-  height: 2px;
-  width: 20%;
-  background-color: ${({ theme }) => theme.color.primary};
-  transition: transform 0.4s ease;
+  ${({ theme }) => theme.mq.desktop} {
+    position: absolute;
+    left: 40%;
+    height: 2px;
+    width: 20%;
+    background-color: ${({ theme }) => theme.color.primary};
+    transition: transform 0.4s ease;
+  }
 `;
 
 export const StyledNavigation = styled.nav`

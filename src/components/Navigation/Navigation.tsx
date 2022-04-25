@@ -46,7 +46,13 @@ const Navigation = () => {
               </a>
             </li>
             <li>
-              <a href="/" onClick={toggleNavigation}>
+              <a href="#projects" onClick={toggleNavigation}>
+                Realizacje
+                <Line />
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={toggleNavigation}>
                 Kontakt
                 <Line />
               </a>

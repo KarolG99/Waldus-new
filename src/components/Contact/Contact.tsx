@@ -9,7 +9,7 @@ import {
 
 const Contact = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contact">
       <ContactHeader>Skontakuj się z nami</ContactHeader>
 
       <ContactDetail>
