@@ -84,4 +84,5 @@ export const StyledImageCounter = styled.p`
   text-align: center;
   margin-top: 0;
   font-size: ${({ theme }) => theme.font.size.paragraph};
+  color: ${({ theme }) => theme.color.dark};
 `;
