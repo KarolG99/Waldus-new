@@ -25,17 +25,22 @@ const Contact = () => {
         <p>woj. małopolskie</p>
         <p>Pn. - Pt. 7:00 - 18:00</p>
         <p>
-          e-mail: <a href="mailto:waldemarbiskup@interia.pl">waldemarbiskup@interia.pl</a>
+          e-mail:{" "}
+          <a href="mailto:waldemarbiskup@interia.pl">
+            waldemarbiskup@interia.pl
+          </a>
         </p>
       </ContactDetail>
+
       <FooterLine />
+
       <StyledPerformance>
-      <h3>
-        Wykonanie:{" "}
-        <a href="https://karolgucwa.pl/" rel="noreferrer" target="_blank">
-          karolgucwa.pl
-        </a>
-      </h3>
+        <h3>
+          Wykonanie:{" "}
+          <a href="https://karolgucwa.pl/" rel="noreferrer" target="_blank">
+            karolgucwa.pl
+          </a>
+        </h3>
       </StyledPerformance>
     </ContactWrapper>
   );

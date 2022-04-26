@@ -44,13 +44,14 @@ export const CarouselWrapper = styled.article`
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 80px 0 80px 0;
+  padding: 80px 0 20px 0;
   z-index: 1;
 `;
 
 export const CarouselImage = styled.img`
   width: 80%;
   max-width: 500px;
+  margin: 0 5px;
 
   &.with-animation {
     /* animation: ${Scale} 0.37s ease-in-out; */
@@ -77,4 +78,10 @@ export const ArrowIcon = styled(Arrow)`
   &.prev {
     transform: rotate(180deg);
   }
+`;
+
+export const StyledImageCounter = styled.p`
+  text-align: center;
+  margin-top: 0;
+  font-size: ${({ theme }) => theme.font.size.paragraph};
 `;

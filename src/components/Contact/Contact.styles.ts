@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactWrapper = styled.footer`
   position: relative;
-  border-top: 1px solid #B1886A;
+  border-top: 1px solid #b1886a;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const ContactWrapper = styled.footer`
   padding: 50px 20px 10px 20px;
 
   ${({ theme }) => theme.mq.tablet} {
-      margin-top: 200px;
+    margin-top: 200px;
   }
 `;
 
@@ -47,16 +47,21 @@ export const ContactDetail = styled.div`
 `;
 
 export const FooterLine = styled.div`
-    width: 100%;
-    height: 1px;
-    background-color: #B1886A;
+  width: 100%;
+  height: 1px;
+  background-color: #b1886a;
 `;
 
 export const StyledPerformance = styled.div`
-    margin-top: 10px;
+  margin-top: 10px;
 
-    a {
-        text-decoration: none;
-        color: ${({ theme }) => theme.color.primary};
-    }
+  h3 {
+    font-size: ${({ theme }) => theme.font.size.smallMenu};
+    font-family: ${({ theme }) => theme.font.family.montserrat};
+  }
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.primary};
+  }
 `;
