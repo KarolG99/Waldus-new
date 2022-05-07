@@ -5,18 +5,22 @@ import Header from "./components/Header/Header";
 import Services from "./components/Services/Services";
 import MainTemplate from "./templates/MainTemplate";
 import Contact from "./components/Contact/Contact";
+import { ApolloProvider } from "@apollo/client";
+import { apolloClient } from "./api/apolloClient";
 
 function App() {
   return (
-    <MainTemplate>
-      <Header />
-      <main>
-        <Services />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-    </MainTemplate>
+    <ApolloProvider client={apolloClient}>
+      <MainTemplate>
+        <Header />
+        <main>
+          <Services />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+      </MainTemplate>
+    </ApolloProvider>
   );
 }
 

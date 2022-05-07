@@ -3,8 +3,8 @@ import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 
 export const Scale = keyframes`
   0% {
-    transform: scale(0.75);
-    opacity: 0.5;
+    transform: scale(0.8);
+    opacity: 0.1;
   }
   100% {
     opacity: 1;
@@ -32,11 +32,17 @@ export const ProjectsWrapper = styled.div`
       left: 0%;
       content: "";
       width: 35%;
-      height: 15px;
+      height: 20px;
       background-color: ${({ theme }) => theme.color.primary};
       z-index: -1;
     }
   }
+`;
+
+export const DataInfo = styled.h2`
+  width: 80%;
+  max-width: 300px;
+  margin: 100px auto 100px auto;
 `;
 
 export const CarouselWrapper = styled.article`
@@ -54,7 +60,7 @@ export const CarouselImage = styled.img`
   margin: 0 5px;
 
   &.with-animation {
-    /* animation: ${Scale} 0.37s ease-in-out; */
+    animation: ${Scale} 0.4s ease-in-out;
   }
 
   ${({ theme }) => theme.mq.tablet} {

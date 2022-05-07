@@ -4,40 +4,46 @@ import {
   ArrowIcon,
   CarouselImage,
   CarouselWrapper,
+  DataInfo,
   ProjectsWrapper,
   StyledImageCounter,
 } from "./Projects.styles";
-import img0 from "../../assets/images/sliderImages/img0.png";
-import img1 from "../../assets/images/sliderImages/img1.png";
-import img2 from "../../assets/images/sliderImages/img2.png";
-import img3 from "../../assets/images/sliderImages/img3.png";
-import img4 from "../../assets/images/sliderImages/img4.png";
+import { gql, useQuery } from "@apollo/client";
 
-const Images = [img0, img1, img2, img3, img4];
+const query = gql`
+  {
+    image {
+      sliderImage {
+        url
+      }
+    }
+  }
+`;
 
 const Projects = () => {
+  const { loading, error, data } = useQuery(query);
   const [currentImg, setCurrentImg] = useState(0);
   const [imageCounter, setImageCounter] = useState(0);
-  // const [animationActive, setAnimationActive] = useState(false);
+  const [animationActive, setAnimationActive] = useState(false);
 
   useEffect(() => {
-    if (Images.length) {
-      setImageCounter(Images.length);
+    if (data) {
+      setImageCounter(data.image.sliderImage.length);
     }
-  }, []);
+  }, [data]);
 
   const toggleImage = (action: string) => {
     switch (action) {
       case "next":
-        // setAnimationActive(true);
+        setAnimationActive(true);
         setCurrentImg((prev) => prev + 1);
-        if (currentImg >= Images.length - 1) setCurrentImg(0);
+        if (currentImg >= data.image.sliderImage.length - 1) setCurrentImg(0);
         break;
 
       case "prev":
-        // setAnimationActive(true);
+        setAnimationActive(true);
         setCurrentImg((prev) => prev - 1);
-        if (currentImg <= 0) setCurrentImg(Images.length - 1);
+        if (currentImg <= 0) setCurrentImg(data.image.sliderImage.length - 1);
         break;
     }
   };
@@ -46,19 +52,29 @@ const Projects = () => {
     <ProjectsWrapper id="projects">
       <h1>Nasze realizacje</h1>
 
-      <CarouselWrapper>
-        <ArrowIcon className="prev" onClick={() => toggleImage("prev")} />
-        <CarouselImage
-          // className={animationActive ? "with-animation" : ""}
-          // onAnimationEnd={() => setAnimationActive(false)}
-          src={Images[currentImg]}
-          alt="projekty"
-        />
-        <ArrowIcon onClick={() => toggleImage("next")} />
-      </CarouselWrapper>
-      <StyledImageCounter>
-        {currentImg + 1}/<strong>{imageCounter}</strong>
-      </StyledImageCounter>
+      {loading && <DataInfo>Ładowanie ...</DataInfo>}
+
+      {error && <DataInfo>Nie mogę wczytać zdjęć, coś poszło nie tak</DataInfo>}
+
+      {!error && !loading && data && (
+        <>
+          <CarouselWrapper>
+            <ArrowIcon className="prev" onClick={() => toggleImage("prev")} />
+
+            <CarouselImage
+              className={animationActive ? "with-animation" : ""}
+              onAnimationEnd={() => setAnimationActive(false)}
+              src={data.image.sliderImage[currentImg].url}
+              alt="projekty"
+            />
+
+            <ArrowIcon onClick={() => toggleImage("next")} />
+          </CarouselWrapper>
+          <StyledImageCounter>
+            {currentImg + 1}/<strong>{imageCounter}</strong>
+          </StyledImageCounter>
+        </>
+      )}
 
       <AfterElement />
     </ProjectsWrapper>
